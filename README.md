@@ -40,7 +40,11 @@ git clone https://github.com/pgasaabyy/Noir---Salao-Unissex.git
 
 ## 📷 Preview
 
-*(adicione aqui prints do projeto depois)*
+<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/80786bc1-5b95-456a-9687-0316ac4c9ea1" />
+<img width="1919" height="972" alt="image" src="https://github.com/user-attachments/assets/285973b6-728d-4254-9ed5-43f513fc3f35" />
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/35df3cf7-b0e3-47e3-a157-22c7305b25ee" />
+
+
 
 ## 📄 Licença
 
