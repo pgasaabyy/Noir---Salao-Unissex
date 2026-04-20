@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOIR — Salão Unissex</title>
+
+    <!-- Favicon: tesoura SVG inline como data URI -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230c0c0c'/%3E%3Ctext y='.9em' font-size='80' x='10'%3E✂%3C/text%3E%3C/svg%3E" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav>
+    <a href="#hero" class="logo">NOIR<span>.</span></a>
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#agendamento">Contato</a></li>
+    </ul>
+    <a href="#agendamento" class="nav-cta">Agendar</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-bg-text">NOIR</div>
+      <div class="hero-tag">Salão Unissex • Desde 2018</div>
+      <h1>ARTE<br>NO SEU<br><em>cabelo</em></h1>
+      <p class="hero-desc">Mais do que um corte — uma experiência. No NOIR, cada detalhe é pensado para revelar a melhor versão de você.</p>
+      <div class="hero-btns">
+        <a href="#agendamento" class="btn-gold">Agendar Agora</a>
+        <a href="#servicos" class="btn-outline">Ver Serviços</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">6+</span><span class="stat-l">Anos</span></div>
+        <div class="stat"><span class="stat-n">2k+</span><span class="stat-l">Clientes</span></div>
+        <div class="stat"><span class="stat-n">98%</span><span class="stat-l">Satisfação</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!--
+        Barbeiro em ação — foco no rosto e mãos trabalhando
+        object-position: center 20% no CSS garante que o topo (rosto) fique visível
+      -->
+      <img class="hero-img"
+        src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80&fit=crop&crop=faces,center&auto=format"
+        alt="Barbeiro NOIR"
+        loading="eager"/>
+      <div class="hero-img-overlay"></div>
+      <div class="hero-badge">
+        <span class="badge-num">★ 5.0</span>
+        <span class="badge-txt">Avaliação Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="sec-header reveal">
+      <span class="sec-tag">O que oferecemos</span>
+      <h2 class="sec-title">Nossos <span>Serviços</span></h2>
+    </div>
+    <div class="serv-grid">
+
+      <div class="serv-card reveal">
+        <div class="serv-img-wrap">
+          <!--
+            Corte masculino — imagem mostra barbeiro aplicando tesoura
+            crop=top garante que o foco fique no cabelo/topo da cabeça
+          -->
+          <img class="serv-img"
+            src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80&fit=crop&crop=top&auto=format"
+            alt="Corte Masculino" loading="lazy"/>
+          <div class="serv-img-overlay"></div>
+        </div>
+        <div class="serv-body">
+          <div class="serv-name">Corte Masculino</div>
+          <p class="serv-desc">Cortes modernos e clássicos, adaptados ao seu estilo e tipo de cabelo. Inclui lavagem e finalização.</p>
+          <div class="serv-price">R$ 65 <span>/ sessão</span></div>
+        </div>
+      </div>
+
+      <div class="serv-card reveal">
+        <div class="serv-img-wrap">
+          <!--
+            Corte feminino — foto em salão, crop=faces para centralizar no rosto
+          -->
+          <img class="serv-img"
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80&fit=crop&crop=faces,top&auto=format"
+            alt="Corte Feminino" loading="lazy"/>
+          <div class="serv-img-overlay"></div>
+        </div>
+        <div class="serv-body">
+          <div class="serv-name">Corte Feminino</div>
+          <p class="serv-desc">Do simples ao criativo — cortes que valorizam seu rosto e realçam sua personalidade única.</p>
+          <div class="serv-price">R$ 85 <span>/ sessão</span></div>
+        </div>
+      </div>
+
+      <div class="serv-card reveal">
+        <div class="serv-img-wrap">
+          <!--
+            Coloração — foto de cabelo colorido/mechas
+            crop=center foca na cor aplicada no cabelo
+          -->
+          <img class="serv-img"
+            src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80&fit=crop&crop=center&auto=format"
+            alt="Coloração" loading="lazy"/>
+          <div class="serv-img-overlay"></div>
+        </div>
+        <div class="serv-body">
+          <div class="serv-name">Coloração</div>
+          <p class="serv-desc">Mechas, ombré, coloração total. Produtos premium para um resultado que dura mais e brilha mais.</p>
+          <div class="serv-price">R$ 180 <span>em diante</span></div>
+        </div>
+      </div>
+
+      <div class="serv-card reveal">
+        <div class="serv-img-wrap">
+          <!-- Barba — foto de barbeiro fazendo a barba — crop=faces para centralizar no rosto do cliente -->
+          <img class="serv-img"
+            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80&fit=crop&crop=faces,center&auto=format"
+            alt="Barba" loading="lazy"/>
+          <div class="serv-img-overlay"></div>
+        </div>
+        <div class="serv-body">
+          <div class="serv-name">Barba</div>
+          <p class="serv-desc">Aparagem, design e hidratação de barba com navalha e produtos especializados para o cuidado masculino.</p>
+          <div class="serv-price">R$ 45 <span>/ sessão</span></div>
+        </div>
+      </div>
+
+      <div class="serv-card reveal">
+        <div class="serv-img-wrap">
+          <!-- Tratamentos capilares — foto de cabelo em tratamento — crop=top foca no cabelo onde o tratamento é visível -->
+          <img class="serv-img"
+            src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=600&q=80&fit=crop&crop=top&auto=format"
+            alt="Tratamentos" loading="lazy"/>
+          <div class="serv-img-overlay"></div>
+        </div>
+        <div class="serv-body">
+          <div class="serv-name">Tratamentos</div>
+          <p class="serv-desc">Hidratação profunda, botox capilar e reconstrução para cabelos danificados, opacos ou ressecados.</p>
+          <div class="serv-price">R$ 120 <span>em diante</span></div>
+        </div>
+      </div>
+
+      <div class="serv-card reveal">
+        <div class="serv-img-wrap">
+          <!-- Pacote Noiva — make/penteado de noiva — crop=faces centraliza no rosto da noiva (maquiagem em evidência) -->
+          <img class="serv-img"
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80&fit=crop&crop=faces,top&auto=format"
+            alt="Pacote Noiva" loading="lazy"/>
+          <div class="serv-img-overlay"></div>
+        </div>
+        <div class="serv-body">
+          <div class="serv-name">Pacote Noiva</div>
+          <p class="serv-desc">Penteado, maquiagem e cuidados completos para o dia mais especial. Inclui teste prévio.</p>
+          <div class="serv-price">R$ 380 <span>/ pacote</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="about-img-wrap reveal">
+      <!-- Barbeiro profissional em salão — crop=faces para focar no rosto -->
+      <img class="about-img"
+        src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=700&q=80&fit=crop&crop=faces,top&auto=format"
+        alt="Nossa equipe NOIR" loading="lazy"/>
+      <div class="about-frame"></div>
+      <div class="about-tag-float">NOIR</div>
+    </div>
+    <div class="about-text reveal">
+      <span class="sec-tag">Nossa história</span>
+      <h2 class="about-title">Paixão por cada <span>detalhe</span></h2>
+      <p class="about-desc">O NOIR nasceu da crença de que cuidar do cabelo é um ato de autoexpressão. Criamos um espaço onde todos são bem-vindos — independente de gênero, estilo ou ocasião.</p>
+      <p class="about-desc">Nossa equipe é formada por profissionais apaixonados, com formação contínua nas últimas tendências nacionais e internacionais.</p>
+      <div class="about-list">
+        <div class="about-li">Ambiente acolhedor e sem julgamentos</div>
+        <div class="about-li">Produtos premium certificados</div>
+        <div class="about-li">Profissionais certificados e atualizados</div>
+        <div class="about-li">Agendamento online e presencial</div>
+        <div class="about-li">Localização central com fácil acesso</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria">
+    <div class="sec-header reveal">
+      <span class="sec-tag">Nosso trabalho</span>
+      <h2 class="sec-title">Galeria</h2>
+    </div>
+    <div class="gallery-grid reveal">
+
+      <!-- Item principal grande (2×2) — ambiente do salão, foco centralizado -->
+      <div class="g-item">
+        <img class="g-img"
+          src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=800&q=80&fit=crop&crop=center&auto=format"
+          alt="Ambiente NOIR" loading="lazy"/>
+        <div class="g-overlay"></div>
+      </div>
+
+      <!-- Corte masculino close — crop=faces para focar no rosto/cabelo -->
+      <div class="g-item">
+        <img class="g-img"
+          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=500&q=80&fit=crop&crop=faces,top&auto=format"
+          alt="Corte masculino" loading="lazy"/>
+        <div class="g-overlay"></div>
+      </div>
+
+      <!-- Ferramentas de barbeiro — crop=center foca nas ferramentas -->
+      <div class="g-item">
+        <img class="g-img"
+          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=500&q=80&fit=crop&crop=center&auto=format"
+          alt="Ferramentas" loading="lazy"/>
+        <div class="g-overlay"></div>
+      </div>
+
+      <!-- Hair styling feminino — crop=top para foco no cabelo -->
+      <div class="g-item">
+        <img class="g-img"
+          src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=500&q=80&fit=crop&crop=faces,top&auto=format"
+          alt="Styling" loading="lazy"/>
+        <div class="g-overlay"></div>
+      </div>
+
+      <!-- Cadeira de barbeiro — crop=center foca nas cadeiras -->
+      <div class="g-item">
+        <img class="g-img"
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=500&q=80&fit=crop&crop=center&auto=format"
+          alt="Cadeira de barbeiro" loading="lazy"/>
+        <div class="g-overlay"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section id="agendamento">
+    <div class="reveal">
+      <h2 class="booking-title">Agende sua<span>visita</span></h2>
+      <p class="booking-sub">Pronto para uma transformação? Entre em contato e marque seu horário. Atendemos de segunda a sábado, das 9h às 19h.</p>
+      <div class="booking-contact">
+        <a href="https://wa.me/5581999999999" target="_blank" class="contact-pill">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com" target="_blank" class="contact-pill">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="tel:+5581999999999" class="contact-pill">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Ligar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="f-logo">NOIR<span>.</span></div>
+    <div class="f-copy">© 2026 NOIR Salão Unissex — Todos os direitos reservados</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
